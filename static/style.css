@@ -3,10 +3,11 @@
 	padding-bottom: 3rem;
 	margin-bottom: 0;
 	background-color: #fff;
-	background-image: url('/static/images/cl.jpg');
+	background-image: url('/static/images/a (3).jpg');
 	background-repeat: no-repeat;
-	background-position: bottom center;
+	background-position: center;
 	background-size: cover;
+	
   }
   @media (min-width: 768px) {
 	.jumbotron {
@@ -25,12 +26,14 @@
   
   .jumbotron .container {
 	max-width: 40rem;
+	background: rgba(9, 9, 9, 0.5);
+	padding:2rem;
+	color:white
   }
   
   .jumbotron p{
-	  color: #fff;
-	  text-shadow: 0 0 10px;
-
+	  color: rgb(255, 255, 255);
+	  
   }
 
 
