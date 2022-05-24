@@ -1,243 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-    <link rel="stylesheet" href="../static/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!-- Bootstrap Scripts & collor scrolling -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="../static/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<!-- Bootstrap Scripts & collor scrolling -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 
 </head>
+
 <body>
 	<header>
 		<div class="collapse bg-dark" id="navbarHeader">
-		  <div class="container">
-			<div class="row">
-			  <div class="col-sm-8 col-md-7 py-4">
-				<h4 class="text-white">About</h4>
-				<p class="text-muted">This is a Github project Demo for movie recommendation system.
-					This dataset contains a set of movie ratings from the MovieLens website, a movie recommendation service. This dataset was collected and maintained by GroupLens, a research group at the University of Minnesota.
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-7 py-4">
+						<h4 class="text-white">About</h4>
+						<p class="text-muted">This is a Github project Demo for movie recommendation system.
+							This dataset contains a set of movie ratings from the MovieLens website, a movie
+							recommendation service. This dataset was collected and maintained by GroupLens, a research
+							group at the University of Minnesota.
 
-				</p>
-			  </div>
-			  <div class="col-sm-4 offset-md-1 py-4">
-				<h4 class="text-white">Contact</h4>
-				<ul class="list-unstyled">
-				  <li><a href="#" class="text-white">Data Exploring</a></li>
-				  <li><a href="#" class="text-white">Dashboard</a></li>
-				  <li><a href="#" class="text-white">Movie Recommender</a></li>
-				</ul>
-			  </div>
+						</p>
+					</div>
+					<div class="col-sm-4 offset-md-1 py-4">
+						<h4 class="text-white">Contact</h4>
+						<ul class="list-unstyled">
+							<li><a href="#" class="text-white">Data Exploring</a></li>
+							<li><a href="#" class="text-white">Dashboard</a></li>
+							<li><a href="#" class="text-white">Movie Recommender</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		  </div>
 		</div>
 		<div class="navbar navbar-dark bg-dark shadow-sm">
-		  <div class="container d-flex justify-content-between">
-			<a href="#" class="navbar-brand d-flex align-items-center">
-			  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-			  <strong>Movie Recommender</strong>
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-		  </div>
-		</div>
-	  </header>
-	  
-	  <main role="main">
-	  
-		<section class="jumbotron text-center">
-		  <div class="container">
-			<h1>Album example</h1>
-			<p class="lead">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-			<p>
-			  <a href="#" class="btn btn-info my-2">Main call to action</a>
-			  <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-			</p>
-		  </div>
-		</section>
-	  
-		<div class="album py-5 bg-light">
-		  <div class="container">
-	  
-			<div class="row">
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
-	  
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
-	  
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-				  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-	  
-				  <div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-					  <div class="btn-group">
-						<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-						<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-					  </div>
-					  <small class="text-muted">9 mins</small>
-					</div>
-				  </div>
-				</div>
-			  </div>
+			<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+						stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+						viewBox="0 0 24 24" focusable="false">
+						<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+						<circle cx="12" cy="13" r="4" />
+					</svg>
+					<strong>Movie Recommender</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+					aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 			</div>
-		  </div>
 		</div>
-	  
-	  </main>
-	  
-	  <footer class="text-muted">
-		<div class="container">
-		  <p class="float-right">
-			<a href="#">Back to top</a>
-		  </p>
-		  <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-		  <p>New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/4.6/getting-started/introduction/">getting started guide</a>.</p>
+	</header>
+
+	<main role="main">
+
+		<section class="jumbotron text-center" id="hom">
+			<div class="container">
+				<h1><strong>Movie Recommender</strong></h1>
+				<p class="lead">This is a Github project Demo for movie recommendation system and data analyzing. Go and
+					explor interactive dashboard and recommender engine! </p>
+				<p>
+					<a href="#" class="btn btn-info my-2">Recommender engine</a>
+					<a href="#" class="btn btn-secondary my-2">interactive dashboard</a>
+				</p>
+			</div>
+		</section>
+
+		<div class="album py-5 bg-light">
+			
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card mb-3 shadow-sm">
+							<img src="/static/images/cl.jpg" alt="">
+							
+
+							<div class="card-body">
+								<p class="card-text">Explore all the movies between 1970 to 2019. This dataset contains a set of movie ratings from the MovieLens website.<a href="https://grouplens.org/datasets/movielens/">Source</a></p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+										
+									</div>
+									<small class="text-muted">Data</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card mb-3 shadow-sm">
+							<img src="/static/images/dash.jpg" alt="">
+
+							<div class="card-body">
+								<p class="card-text">An interactive Tableau movies dashboard.This dashboard is interactive by year,average rating and genres.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://public.tableau.com/app/profile/laleh.safarzadeh/viz/Movie_16532812067340/Moviedashboard">View</a></button>
+								
+									</div>
+									<small class="text-muted"><a href="https://public.tableau.com/app/profile/laleh.safarzadeh/viz/Movie_16532812067340/Moviedashboard">Dashboard</a></small>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class="col-md-3">
+						<div class="card mb-3 shadow-sm">
+							<img src="/static/images/analy.jpg" alt="">
+
+							<div class="card-body">
+								<p class="card-text">This page includes overall analysis of movie and user rating dataset. see what is the most popular movies and their rated.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+										
+									</div>
+									<small class="text-muted">Analysis</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card mb-3 shadow-sm">
+							<img src="/static/images/movie.jpg" alt="">
+							
+
+							<div class="card-body">
+								<p class="card-text">The recommender page will recommend you movies besed on users rates who is like you. This engine is based on collabrating filter</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+										
+									</div>
+									<small class="text-muted">Recommendation engine</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="footer-section" id="footer">
+		<div class="container">  
+		  <br>
+		  <br>
+		  <a href="https://www.linkedin.com/in/lalehsafarzadeh/"><i class="social-icon fab fa-linkedin"></i></a>
+		  <a href="https://laleh-safarzadeh.herokuapp.com/"><i class="social-icon fas fa-address-card"></i></a>
+		  <a href = "mailto: lalesafarzade@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+		  <a href="https://github.com/lalesafarzade"><i class="social-icon fab fa-github"></i></a><br>
+		  <p id="footer">© Copyright Laleh Safarzadeh 2022.</p>
+		  
 		</div>
 	  </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.css"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.css"></script>
+	
 </body>
+
 </html>
