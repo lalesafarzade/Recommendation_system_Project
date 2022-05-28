@@ -9,8 +9,7 @@ from flask_bootstrap import Bootstrap
 import bz2
 import pickle
 import requests
-API_Key=""
-#from config import API_Key
+
 import os
 #import _pickle as cPickle
 
@@ -35,9 +34,9 @@ def title_maker(indices=indices):
         tuples.append((i,i))
     return tuples
 
-key=os.getenv("HEROKU_KEY",API_Key)
+
 def poster_finder(tmdbId):
-    response=requests.get(f'https://api.themoviedb.org/3/movie/{tmdbId}?api_key={key}&language=en-US')
+    response=requests.get(f'https://api.themoviedb.org/3/movie/{tmdbId}?api_key=6174d3a5724543217a9adbf81d2c493&language=en-US')
     
     data=response.json()
     try:
