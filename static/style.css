@@ -1,0 +1,230 @@
+#jumbotron1{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-bottom: 0;
+	background-color: #fff;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+  }
+
+  #hom{
+	background-image: url('/static/images/a3.jpg');
+  padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-bottom: 0;
+	background-color: #fff;
+	display:flex;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+  }
+
+  #analysis{
+	background-image: url('/static/images/analy.jpg');
+  padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-bottom: 0;
+	background-color: #fff;
+	display:flex;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+  }
+.card{
+  box-shadow: 0 10px 16px -8px rgb(5, 5, 5);
+}
+  #recommend{
+    
+    padding-top: 3rem;
+    margin-top: 10rem;
+    background: rgba(9, 9, 9, 0.8);
+    color: rgb(255, 255, 255);
+    
+    }
+
+  @media (min-width: 768px) {
+	.jumbotron {
+	  padding-top: 6rem;
+	  padding-bottom: 6rem;
+	}
+  #main{
+    padding-left: .5rem;
+    padding-right: .5rem
+  }
+  .reca{
+    font-weight: 100;
+
+  }
+  }
+
+  #main{
+    margin-top:3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #000;
+  }
+  
+  .jumbotron p:last-child {
+	margin-bottom: 0;
+  }
+  
+  .jumbotron h1 {
+	font-weight: 300;
+  }
+  
+  .jumbotron .container {
+	max-width: 40rem;
+	background: rgba(9, 9, 9, 0.5);
+	padding:2rem;
+	color:white
+  }
+  
+  .jumbotron p{
+	  color: rgb(255, 255, 255);
+	  
+	  
+  }
+  #bg_class{
+    background-size: cover;
+  }
+
+  #bg-image {
+    /* The image used */
+
+  
+    
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  footer {
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+  }
+  
+  footer p {
+	margin-bottom: .25rem;
+  }
+
+  .card > img{
+	  margin-bottom: .75rem;
+	  max-width: 100%;
+  }
+
+  .card-text{
+	  font-size: 85%;
+  }
+
+  .album{
+	  margin-left: 10rem;
+	  margin-right: 10rem;
+  }
+/* table page */
+
+#head{
+	color:#288da3;
+}
+
+  .table-fixed tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-fixed tbody td,
+.table-fixed tbody th,
+.table-fixed thead > tr > th {
+    float: center;
+    position: relative;
+
+    
+}
+
+.t-row{
+  font-family: "Montserrat-Bold";
+  font-size: .65rem;
+}
+
+.table{
+  padding: 2rem 20rem 20rem;
+}
+
+.t-Data{
+  font-family: "Ubuntu"; 
+  color:#288da3 ;
+  font-size: 1.2 rem;
+  font-weight: bold
+}
+
+.t-Data2{
+  font-family: "Ubuntu"; 
+  color:#e7ebee ;
+  font-size: 1.2 rem;
+  font-weight: bold
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #288da3;
+}
+
+#data-col{
+  background-color: #FDCEB9;
+  margin-top: 10rem; 
+  margin-bottom: 10rem; 
+  padding: 10px 20px 10px; 
+  color:rgb(9, 9, 9);
+  
+}
+
+.tabi{
+	margin-top: 3rem;
+}
+/* analysis
+.zooming:hover{
+	transform: scale(4);
+  }*/
+
+
+/* footer */
+
+#footer{
+  
+  text-align: center;
+  color: #0e1a21;
+}
+.social-icon {
+  color: #0e1a21;
+  border-color: black;
+  margin:0 .5rem; 
+}
+
+.social-icon:hover,#footer:hover,#nav-brand:hover,#nav-text:hover,.t-Data:hover {
+  color: #FDCEB9;
+}
+
+
+.t-title{
+  font-family: "Ubuntu"; 
+  color:#e7ebee ;
+  font-size: .85rem;
+  background-color: #288da3;
+}
+
+#f_cap{
+  font-family: "Ubuntu"; 
+  color:#e7ebee ;
+  font-size: .85rem;
+}
+
+
+@media only screen and (max-width: 960px) {
+.tabi{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

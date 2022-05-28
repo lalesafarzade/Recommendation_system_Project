@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Recommender</title>
+    
+        <link rel="stylesheet" href="../static/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- Bootstrap Scripts & collor scrolling -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    
+    </head>
+<body>
+    <header>
+		<div class="collapse bg-dark" id="navbarHeader">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-7 py-4">
+						<h4 class="text-white">About</h4>
+						<p class="text-muted">This page is a Github project Demo for movie recommendation system including a movie analysis
+							,interactive Tableau dashboard, recommender engine and 150 most popular movies.
+							The datasets are from the MovieLens website and themoviedb api. 
+
+						</p>
+					</div>
+					<div class="col-sm-4 offset-md-1 py-4">
+						<h4 class="text-white">Content</h4>
+						<ul class="list-unstyled">
+							<li><a href="/bestmovies" class="text-white">Best Movies</a></li>
+							<li><a href="/analysis" class="text-white">Movies Analysis</a></li>
+							<li><a href="https://public.tableau.com/app/profile/laleh.safarzadeh/viz/Movie_16532812067340/Moviedashboard" class="text-white">Dashboard</a></li>
+							<li><a href="/recommender" class="text-white">Movie Recommender</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar navbar-dark bg-dark shadow-sm">
+			<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center">
+					
+					<strong>Movie Recommender</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+					aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+    <div class="jumbotron text-center" id="hom">
+        <div class="container">
+            <h3 class="reca"><strong>Movie Recommender</strong></h3>
+            <p class="lead">This is a Github project Demo for movie recommendation system and data analyzing. Go and
+                explor! </p>
+            <p>
+                <a href="/recommender" class="btn btn-info my-2">Recommender engine</a>
+                <a href="/bestmovies" class="btn btn-secondary my-2">See the best movies</a>
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid" id="main">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+              <div class="card">
+                <img src="/static/images/cl.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Best movies</h5>
+                  <p class="card-text">See the 150 best movies between 1970 to 2019.This data is based on number of users rates and average of ratings.<a href="https://grouplens.org/datasets/movielens/">Source</a></p>
+                  <a href="/bestmovies"><button type="button" class="btn btn-sm btn-outline-info">View</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="/static/images/dash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard</h5>
+                  <p class="card-text">An interactive movies dashboard in Tableau website.This dashboard is interactive by year,average rating and genres.</p>
+                  <a href="https://public.tableau.com/app/profile/laleh.safarzadeh/viz/Movie_16532812067340/Moviedashboard"><button type="button" class="btn btn-sm btn-outline-info">View</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100">
+                <img src="/static/images/analy.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Analysis</h5>
+                  <p class="card-text">This page includes the overall analysis of movies and user rating dataset. see what is the most popular movies and their rated.</p>
+                  <a href="/analysis"><button type="button" class="btn btn-sm btn-outline-info">View</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100">
+                <img src="/static/images/movie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Recommender engine</h5>
+                  <p class="card-text">The recommender page has the engine that will recommends movies besed on Genres,stars and directers. </p>
+                  <a href="/recommender"><button type="button" class="btn btn-sm btn-outline-info">View</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    <footer class="footer-section" id="footer">
+		<div class="container">  
+		  <br>
+		  <br>
+		  <a href="https://www.linkedin.com/in/lalehsafarzadeh/"><i class="social-icon fab fa-linkedin"></i></a>
+		  <a href="https://laleh-safarzadeh.herokuapp.com/"><i class="social-icon fas fa-address-card"></i></a>
+		  <a href = "mailto: lalesafarzade@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+		  <a href="https://github.com/lalesafarzade"><i class="social-icon fab fa-github"></i></a><br>
+		  <p id="footer">© Copyright Laleh Safarzadeh 2022.</p>
+		  
+		</div>
+	  </footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.css"></script>
+    
+    
+</body>
+</html>

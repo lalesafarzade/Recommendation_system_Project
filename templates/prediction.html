@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body background="/static/images/banner.jpg" class="bg-image">
+
+    <div>
+        <section class="container-fluid" id="recommend">
+            
+                <h1 class="text-center"><strong>Movie Recommendation based on Genre, stars and directers</strong></h1>
+                
+                    
+    
+                        <div class="container-fluid">
+                            
+                                <div class="container round">
+                                    {% for i in results %}
+                                <div class="row" id="recommend">
+                                    <div class="col-lg-6 col-md-12">
+                                        <span><img src={{i.poters}} alt="" class="img-thumbnail"></span>
+
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <br>
+                                        <h2>{{ i.titles }}</h2>
+                                        <br>
+                                        <p>{{ i.overview }}</p>
+                                        <br>
+                                        <p>Movie Score:{{i.score}}</p>
+                                        <br>
+                                        <p>Photo and overview from <a href="https://www.themoviedb.org/">THE MOVIEW DB</a></p>
+
+                                    </div>
+                                    <br>
+
+                                </div>
+                                {% endfor %}
+
+
+                                </div>
+    
+                              
+                                
+                                
+
+
+                               
+    
+    
+    
+                            </div>
+    
+                       
+    
+            </div>
+        </section>
+    </div>
+    
+
+
+
+                
+					
+            
+    <footer class="footer-section" id="footer">
+        <div class="container">  
+         
+          <a href="https://www.linkedin.com/in/lalehsafarzadeh/"><i class="social-icon fab fa-linkedin"></i></a>
+          <i class="social-icon fas fa-address-card"></i>
+          <a href = "mailto: lalesafarzade@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+          
+          <p id="footer">© Copyright  2022.<a href="https://github.com/lalesafarzade"><i class="social-icon fab fa-github"></i></a></p>
+          
+        </div>
+      </footer>
+
+</body>
+
+{% endblock content %}
