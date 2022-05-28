@@ -20,9 +20,9 @@ def decompress_pickle(file):
   return data
 
 
-cosin_=decompress_pickle('pickles/my_cosine.pbz2') 
-indices_dict=joblib.load("pickles/indices.pkl")
-res_dict=joblib.load("pickles/res_dict.pkl")
+cosin_=decompress_pickle('pickles/my_cosin.pbz2') 
+indices_dict=joblib.load("pickles/indicess.pkl")
+res_dict=joblib.load("pickles/rse_dict.pkl")
 
 
 res=pd.DataFrame(res_dict)
