@@ -34,6 +34,7 @@
   }
 .card{
   box-shadow: 0 10px 16px -8px rgb(5, 5, 5);
+
 }
   #recommend{
     
@@ -56,6 +57,10 @@
   .reca{
     font-weight: 100;
 
+  }
+
+  #card{
+    padding-top: 2rem;
   }
   }
 
