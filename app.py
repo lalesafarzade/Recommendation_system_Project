@@ -9,6 +9,7 @@ from flask_bootstrap import Bootstrap
 import bz2
 import pickle
 import requests
+API_Key=""
 #from config import API_Key
 import os
 #import _pickle as cPickle
