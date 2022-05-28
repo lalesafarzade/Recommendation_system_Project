@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<body background="/static/images/banners3.jpg" id="bg_class">
+    
+
+
+<div id="recommend">
+    <h3><strong>Movie Recommender</strong></h3>
+    <p class="lead">Choose a movie that you loved! </p>
+    <form method="POST">
+        {# This hidden_tag is a CSRF security feature. #}
+        {{ form.hidden_tag() }}
+        <div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    
+
+                    <p>Title {{form.title(class="btn btn-sm btn-info dropdown-toggle")}}</p>
+
+
+
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-10">
+                    <p>Number of movies {{form.number(class="form-control form-control-sm" )}}</p>
+
+                    <p>{{form.submit(class='btn btn-info') }}</p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+
+</div>
+
+
+
+<footer class="footer-section" id="footer">
+    <div class="container">
+
+        <a href="https://www.linkedin.com/in/lalehsafarzadeh/"><i class="social-icon fab fa-linkedin"></i></a>
+        <i class="social-icon fas fa-address-card"></i>
+        <a href="mailto: lalesafarzade@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+
+        <p id="footer">© Copyright 2022.<a href="https://github.com/lalesafarzade"><i
+                    class="social-icon fab fa-github"></i></a></p>
+
+    </div>
+</footer>
+</body>
+
+
+{% endblock content %}
