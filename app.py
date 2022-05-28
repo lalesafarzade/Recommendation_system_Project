@@ -35,9 +35,9 @@ def title_maker(indices=indices):
         tuples.append((i,i))
     return tuples
 
-
+key=os.getenv("HEROKU_KEY",API_Key)
 def poster_finder(tmdbId):
-    response=requests.get(f'https://api.themoviedb.org/3/movie/{tmdbId}?api_key={os.getenv("HEROKU_KEY",API_Key)}&language=en-US')
+    response=requests.get(f'https://api.themoviedb.org/3/movie/{tmdbId}?api_key={key}&language=en-US')
     
     data=response.json()
     try:
