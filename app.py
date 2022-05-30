@@ -19,9 +19,9 @@ def decompress_pickle(file):
   return data
 
 
-cosin_=decompress_pickle('pickles/my_cosine.pbz2') 
-indices_dict=joblib.load("pickles/indices.pkl")
-res_dict=joblib.load("pickles/res_dict.pkl")
+cosin_=decompress_pickle('pickles/my_cosin.pbz2') 
+indices_dict=joblib.load("pickles/indicess.pkl")
+res_dict=joblib.load("pickles/rse_dict.pkl")
 
 
 res=pd.DataFrame(res_dict)
@@ -35,7 +35,7 @@ def title_maker(indices=indices):
 
 
 def poster_finder(tmdbId):
-    response=requests.get(f'https://api.themoviedb.org/3/movie/{tmdbId}?api_key={API_Key}&language=en-US')
+    response=requests.get(f'https://api.themoviedb.org/3/movie/{tmdbId}?api_key=6a38ee86b6ea8a82ea108f922bc52050&language=en-US')
     
     data=response.json()
     try:
