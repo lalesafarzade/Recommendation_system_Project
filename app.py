@@ -36,7 +36,7 @@ def title_maker(indices=indices):
 
 
 def poster_finder(tmdbId):
-    #response=requests.get(f'https://api.themoviedb.org/3/movie/{tmdbId}?api_key=6a38ee86b6ea8a82ea108f922bc52050&language=en-US')
+    
     response=requests.get(f'https://api.themoviedb.org/3/movie/{tmdbId}?api_key={os.getenv("HEROKU_KEY",API_Key)}&language=en-US')
     
     data=response.json()
